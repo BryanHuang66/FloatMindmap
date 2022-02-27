@@ -13,3 +13,12 @@
 实际上最终只实现了前两个功能。无法实现的原因来自技术层面以及个人能力。如果之后有精力，会继续去研究。
 
 ![2](https://user-images.githubusercontent.com/49256406/155869878-a277277e-0b42-4985-b7ef-b083f3e144f1.gif)
+
+---
+
+## 使用方法
+1. yarn 安装package
+2. yarn dev 用于测试
+3. yarn build 用于打包
+
+具体参见ohmymn
