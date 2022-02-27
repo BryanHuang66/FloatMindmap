@@ -156,14 +156,14 @@ function excerptHandler(_note:MbBookNote,_lastExcerptText?:string){
         var output1 = {"root":parent_note_info}
         log(JSON.stringify(output1),"output")
         self.webController.webView.evaluateJavaScript('km.importJson('+JSON.stringify(output1)+')')
-        var theme_list = ["fresh-blue","fresh-blue-compat","fresh-green","fresh-red","fresh-pink","fresh-pink-compat","fresh-purple","fresh-purple-compat","fresh-red","fresh-red-compat","fresh-soil","fresh-soil-compt","wire"]
+        var theme_list = ["fresh-blue","fresh-blue-compat","fresh-green","fresh-green-compat","fresh-pink","fresh-pink-compat","fresh-purple","fresh-purple-compat","fresh-red","fresh-red-compat","fresh-soil","fresh-soil-compat","wire"]
         self.webController.webView.evaluateJavaScript(`km.execCommand("theme", "${theme_list[profile.autodetect.theme[0]]}")`)
       } 
       else{
         var output2 = {"root":noteInfo}
         log(JSON.stringify(output2),"output2")
         self.webController.webView. evaluateJavaScript('km.importJson('+JSON.stringify(output2)+')')
-        var theme_list = ["fresh-blue","fresh-blue-compat","fresh-green","fresh-red","fresh-pink","fresh-pink-compat","fresh-purple","fresh-purple-compat","fresh-red","fresh-red-compat","fresh-soil","fresh-soil-compt","wire"]
+        var theme_list = ["fresh-blue","fresh-blue-compat","fresh-green","fresh-green-compat","fresh-pink","fresh-pink-compat","fresh-purple","fresh-purple-compat","fresh-red","fresh-red-compat","fresh-soil","fresh-soil-compat","wire"]
         self.webController.webView.evaluateJavaScript(`km.execCommand("theme", "${theme_list[profile.autodetect.theme[0]]}")`)
       }
     

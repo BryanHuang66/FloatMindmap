@@ -130,7 +130,7 @@ const onSwitchChange: eventHandler = sender => {
         delay(0.2).then(() => void self.studyController.becomeFirstResponder())
         try{
           viewPopUp()
-          var theme_list = ["fresh-blue","fresh-blue-compat","fresh-green","fresh-red","fresh-pink","fresh-pink-compat","fresh-purple","fresh-purple-compat","fresh-red","fresh-red-compat","fresh-soil","fresh-soil-compat","wire"]
+          var theme_list = ["fresh-blue","fresh-blue-compat","fresh-green","fresh-green-compat","fresh-pink","fresh-pink-compat","fresh-purple","fresh-purple-compat","fresh-red","fresh-red-compat","fresh-soil","fresh-soil-compat","wire"]
           // log(theme_list[profile.autodetect.theme[0]],"!!!!!!!!!")
           self.webController.webView.evaluateJavaScript(`km.execCommand("theme", "${theme_list[profile.autodetect.theme[0]]}")`) 
        
@@ -168,7 +168,7 @@ const onSelectChange: eventHandler = sender => {
         viewPopUp()
       }
     case "theme":
-      var theme_list = ["fresh-blue","fresh-blue-compat","fresh-green","fresh-red","fresh-pink","fresh-pink-compat","fresh-purple","fresh-purple-compat","fresh-red","fresh-red-compat","fresh-soil","fresh-soil-compat","wire"]
+      var theme_list = ["fresh-blue","fresh-blue-compat","fresh-green","fresh-green-compat","fresh-pink","fresh-pink-compat","fresh-purple","fresh-purple-compat","fresh-red","fresh-red-compat","fresh-soil","fresh-soil-compat","wire"]
       log(theme_list[selections[0]],"theme")
       self.webController.webView.evaluateJavaScript(`km.execCommand("theme", "${theme_list[selections[0]]}")`)
     
