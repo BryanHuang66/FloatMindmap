@@ -21,4 +21,4 @@
 2. yarn dev 用于测试
 3. yarn build 用于打包
 
-具体参见ohmymn
+具体参见[ohmymn](https://busiyi.notion.site/74e16f9860bc4092833f198bf8932dcf)
