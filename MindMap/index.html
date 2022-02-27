@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>KityMinder Example</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="stylesheet" href="src/kityminder.css" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        
+        #minder-view {
+            position: absolute;
+            border: 0px solid #ccc;
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+
+    <script type="text/javascript" src="node_modules/kity/dist/kity.js"></script>
+</head>
+
+<body style="background:none">
+    <script id="minder-view" type="application/kityminder" minder-data-type="json">
+        { "root": { "data": { "text": "选择摘录语句"}},"template":"right" }
+    </script>
+</body>
+
+<script type="text/javascript" src="dist/kityminder.core.js"></script>
+<script type="text/javascript">
+    // 创建 km 实例
+    /* global kityminder */
+    var km = window.km = new kityminder.Minder();
+    km.setup('#minder-view');
+    km.execCommand('hand');
+</script>
+
+</html>
